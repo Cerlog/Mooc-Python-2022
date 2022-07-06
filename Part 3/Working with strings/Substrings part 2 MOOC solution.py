@@ -10,7 +10,9 @@ st
 est
 test
 """
-# Write your solution here
-s = input("Please type in a string")
-for i in range(len(s)):
-    print(s[-i-1:])
+string = input("Please type in a string: ")
+start = len(string) - 1
+while start >= 0:
+    print(string[start:])
+    start -= 1
+
